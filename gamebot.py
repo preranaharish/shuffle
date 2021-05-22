@@ -2,7 +2,6 @@ import os
 import random
 import discord
 import configly
-from configly import errors
 # from dotenv import load_dotenv
 from urllib.request import urlopen
 
