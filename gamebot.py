@@ -1,14 +1,17 @@
 import os
 import random
 import discord
-from dotenv import load_dotenv
+import configly
+from configly import errors
+# from dotenv import load_dotenv
 from urllib.request import urlopen
 
 easy = open("easy.txt")
 words = easy.read().splitlines()
-load_dotenv()
-TOKEN = os.getenv('GAMEBOT_TOKEN')
+# load_dotenv()
+# TOKEN = os.getenv('GAMEBOT_TOKEN')
 client = discord.Client()
+TOKEN = os.environ.get('GAMEBOT_TOKEN')
 
 global total_points,n
 total_points = 0
